@@ -30,17 +30,20 @@ The goal of an ODE solver is to compute the value of the system
 state ``y`` at a later time ``t1 > t0`` given the initial state and
 the function ``f(t, y)``.
 
-This project implements two Runge-Kutta methods:
+This project implements two explicit Runge-Kutta methods for
+solving non-stiff IVPs:
 
-1. **Fourth-Order Runge-Kutta (RK4)**: A fixed-step method with
-   local truncation error ``O(h^5)`` and global error ``O(h^4)``.
+1. **Fourth-Order Runge-Kutta (RK4)**: A classical fixed-step
+   method that evaluates ``f(t, y)`` four times per step using
+   the Butcher tableau coefficients. It achieves local truncation
+   error ``O(h^5)`` and global error ``O(h^4)``. Best suited for
+   problems where a uniform step size is acceptable.
 
-2. **Dormand-Prince Adaptive Runge-Kutta (RK45)**: A dynamic method
-   that estimates the local error using two different order methods
-   and automatically adjusts the step size to satisfy user-defined
-   accuracy tolerances. This ensures smaller steps when the solution
-   changes rapidly and larger steps when the solution is smooth,
-   optimizing both accuracy and efficiency.
+2. **Dormand-Prince (RK45)**: An embedded Runge-Kutta method that
+   uses a 6-stage, 5th-order formula paired with a 4th-order
+   error estimate to perform adaptive step-size control. The error
+   estimate drives automatic step acceptance and rejection to meet
+   user-specified tolerances ``rtol`` and ``atol``.
 
 Existing libraries like SciPy have powerful ODE solvers but are
 implemented in Python and not ideal for direct integration into C++
