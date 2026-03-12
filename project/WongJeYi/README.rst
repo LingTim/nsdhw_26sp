@@ -168,11 +168,11 @@ Schedule
 ========
 
 Week 1 (03/09):
+Definition for c++ ColTable data structure
 Start presentation slide preparation and update according to weekly progress
 
 Week 2 (03/16):
-Definition for c++ table structure
-Definition for c++ table operation functions
+Definition for c++ table buffer operation functions
 
 Week 3 (03/23):
 Create indexing, slicing, getting, replace function in c++
