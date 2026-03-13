@@ -5,6 +5,7 @@ Proposal: FastGA - A High-Performance Hybrid Genetic Algorithm Engine
 Basic Information
 =================
 
+**Author:** jylin34
 **Repository:** https://github.com/jylin34/FastGA
 
 FastGA is a high-performance C++ genetic algorithm (GA) library with 
@@ -197,9 +198,17 @@ Schedule
 References
 ==========
 
-1. **Course Repository**: yungyuc/nsd (https://github.com/yungyuc/nsd)
-2. **pybind11 Documentation**: https://pybind11.readthedocs.io/
-3. **PyGAD Library**: Ahmed Gad, GeneticAlgorithmPython (https://github.com/ahmedfgad/GeneticAlgorithmPython)
-4. **NumPy Buffer Protocol**: https://numpy.org/doc/stable/reference/arrays.interface.html
-5. **Rosenbrock Function**: Rosenbrock, H. H. (1960). An automatic method for finding the greatest or least value of a function. The Computer Journal.
-6. **OpenMP Specification**: https://www.openmp.org/
+1. **Course Website**: 
+   https://yyc.solvcon.net/en/latest/nsd/index.html
+
+2. **pybind11 Documentation**: 
+   https://pybind11.readthedocs.io/
+
+3. **PyGAD (Genetic Algorithm in Python)**: 
+   https://github.com/ahmedfgad/GeneticAlgorithmPython
+
+4. **NumPy Buffer Protocol**: 
+   https://numpy.org/doc/stable/reference/arrays.interface.html
+
+5. **OpenMP Specification**: 
+   https://www.openmp.org/specifications/
