@@ -71,7 +71,10 @@ System Architecture
 ===================
 
 FastGA adopts a three-tier hybrid architecture to maximize throughput while 
-maintaining user-defined flexibility in Python.
+maintaining user-defined flexibility in Python. All performance-
+critical operators, such as crossover and mutation, are implemented in
+the C++ core. This ensures the entire population is processed in a single
+batch call, avoiding the overhead of Python-level iteration.
 
 1. **Python Control Layer**: 
    Users define the optimization problem and the fitness logic. To optimize 
