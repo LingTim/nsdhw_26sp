@@ -1,5 +1,9 @@
 # Fast Matrix Operations with C++ Backend for NumPy
 
+## URL
+
+https://github.com/LingTim/numpy-cpp-accelerator
+
 ## Author
 
 GitHub Account: LingTim
@@ -65,6 +69,28 @@ The following tools and technologies will be used:
 * NumPy
 * pybind11
 * Git / GitHub
+
+## Operations and Routines
+
+The project will implement the following core operations as C++ extensions for Python:
+
+1. **Basic Element-wise Operations:**
+   * ``add(matrix_a, matrix_b)``: Element-wise addition of two matrices/vectors.
+   * ``subtract(matrix_a, matrix_b)``: Element-wise subtraction.
+   * ``multiply(matrix_a, matrix_b)``: Element-wise multiplication (Hadamard product).
+
+2. **Linear Algebra Operations:**
+   * ``dot(vector_a, vector_b)``: Inner product of two 1D vectors.
+   * ``matmul(matrix_a, matrix_b)``: General matrix multiplication (GEMM).
+
+3. **Optimized Implementations for Matrix Multiplication:**
+   To explore performance tuning, ``matmul`` will be implemented in different versions:
+   * ``matmul_naive(...)``: Standard $O(N^3)$ implementation as a performance baseline.
+   * ``matmul_tile(...)``: Cache-friendly block/tiled matrix multiplication.
+   * ``matmul_simd(...)``: Vectorized implementation utilizing SIMD (e.g., AVX/SSE) instructions.
+
+4. **Utility & Data Management (via Pybind11):**
+   * Memory mapping and seamless data conversion between NumPy ``ndarray`` and C++ data structures (e.g., ``std::vector`` or raw pointers) without unnecessary copying.
 
 ## Expected Outcome
 
