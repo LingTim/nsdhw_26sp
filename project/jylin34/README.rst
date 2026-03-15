@@ -101,7 +101,7 @@ batch call, avoiding the overhead of Python-level iteration.
 
 Workflow:
 ---------
-1. Initialize a contiguous ``std::vector<double>`` buffer in C++.
+1. Initialize a stable, fixed-size, contiguous memory buffer in C++.
 2. **Reproduction Phase**: C++ uses OpenMP to perform mutation/crossover 
    on all 1D vectors in parallel.
 3. **Evaluation Phase**: C++ maps the buffer to a NumPy array and makes a 
