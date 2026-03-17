@@ -8,9 +8,10 @@ Basic Information
 Project Repository:
 https://github.com/annie95162/ProtoLib
 
-ProtoLib is a lightweight vector storage and similarity search library designed for incremental learning systems.
-
-The library supports efficient storage and retrieval of feature vectors and provides high-performance nearest neighbor search functionality.
+ProtoLib is a lightweight vector storage and similarity search library
+designed for incremental learning systems. The library supports efficient
+storage and retrieval of feature vectors and provides high-performance
+nearest neighbor search functionality.
 
 Problem to Solve
 ================
@@ -24,13 +25,18 @@ These stored vectors are later used for tasks such as:
 * Rehearsal-free continual learning
 * Similarity search
 
-Typical solutions like FAISS or Milvus are powerful but often introduce excessive overhead and complexity for moderate-scale research tasks or embedded environments (e.g., Raspberry Pi).
+Typical solutions like FAISS or Milvus are powerful but often introduce
+excessive overhead and complexity for moderate-scale research tasks or
+embedded environments.
 
-The goal of this project is to implement an efficient vector storage system optimized for numerical performance:
+The goal of this project is to implement an efficient vector storage system
+optimized for numerical performance:
 
 * **Dynamic insertion**: Efficiently manage memory for growing datasets.
-* **Numerical optimization**: Implement L2 and Cosine similarity using C++ loops with potential SIMD (AVX/NEON) or OpenMP acceleration.
-* **Zero-copy interface**: Provide a seamless Python binding to handle NumPy arrays without unnecessary memory duplication.
+* **Numerical optimization**: Implement L2 and Cosine similarity using C++
+  loops with potential SIMD (AVX/NEON) or OpenMP acceleration.
+* **Zero-copy interface**: Provide a seamless Python binding to handle NumPy
+  arrays without unnecessary memory duplication.
 
 Prospective Users
 =================
@@ -77,8 +83,7 @@ Vectors are stored in a contiguous memory layout using a single
 
 .. code-block:: cpp
 
-    class VectorStore
-    {
+    class VectorStore{
     public:
 
         // constructor
