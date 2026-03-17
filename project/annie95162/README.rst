@@ -179,7 +179,7 @@ Planning phase (8 weeks):
 * **Week 2 (03/23)**: Implement core ``VectorStore`` class and memory management.
 * **Week 3 (03/30)**: Implement optimized L2 distance computation kernels.
 * **Week 4 (04/06)**: Implement Cosine similarity and edge-case handling.
-* **Week 5 (04/13)**: Develop the k-Nearest Neighbor search algorithm (Brute-force/Flat).
+* **Week 5 (04/13)**: Develop the k-Nearest Neighbor search algorithm.
 * **Week 6 (04/20)**: Finalize Python bindings and ensure NumPy compatibility.
 * **Week 7 (04/27)**: Performance profiling and optimization (OpenMP).
 * **Week 8 (05/04)**: Complete documentation and prepare for presentation.
@@ -187,6 +187,8 @@ Planning phase (8 weeks):
 References
 ==========
 
-1. Johnson, J., Douze, M., & Jégou, H. (2019). "Faiss: A library for efficient similarity search."
+1. Johnson, J., Douze, M., & Jégou, H. (2019). "Faiss: A library for
+   efficient similarity search."
 2. pybind11 documentation: https://pybind11.readthedocs.io/
-3. Rebuffi, S. A., et al. (2017). "iCaRL: Incremental Classifier and Representation Learning."
+3. Rebuffi, S. A., et al. (2017). "iCaRL: Incremental Classifier and
+   Representation Learning."
