@@ -54,8 +54,8 @@ Follow the format to add your project:
    https://github.com/github_account_name/project_name
 
 1. `LingTim <https://github.com/LingTim>`__ for
-   `Fast Matrix Operations with C++ Backend for NumPy <LingTim/README.rst>`__:
-   https://github.com/LingTim/numpy-cpp-accelerator
+   `Emulating NumPy Matrix Operations <LingTim/README.rst>`__:
+   https://github.com/LingTim/Emulating-NumPy-Matrix-Operations
 
 .. note::
 
