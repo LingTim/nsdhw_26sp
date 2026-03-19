@@ -61,7 +61,7 @@ The system follows a classic hybrid architecture:
    with NumPy arrays while avoiding memory safety issues.
 
 **Work Flow**:
-Input vectors (NumPy) -> pybind11 (Pointer passing) -> C++ Vector Store -> 
+Input vectors (NumPy) -> pybind11 (buffer interface) -> C++ Vector Store -> 
 SIMD-optimized Search -> Results returned to Python.
 
 **Modularization**:
