@@ -64,6 +64,10 @@ Follow the format to add your project:
    `DotArena <romanycc/README.rst>`__:
    https://github.com/romanycc/DotArena
 
+1. `jylin34 <https://github.com/jylin34>`__ for
+   `FastGA <jylin34/README.rst>`__:
+   https://github.com/jylin34/FastGA
+
 .. note::
 
   Append your project after the first example entry.  Do not delete the example
