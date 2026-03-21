@@ -87,8 +87,9 @@ The core layer is implemented in C++11 and focuses on fixed-cost updates for
 streaming statistics.
 
 - **RingBuffer<T>** is the primary data container. It stores the most recent
-  `W` samples in a fixed-size contiguous buffer, so memory usage remains 
-  bounded.
+  `W` samples in a fixed-size contiguous buffer, which is designed to be 
+  directly accessible by Python via the buffer protocol to achieve zero-copy 
+  data sharing.
 
 - **Statistics modules** are updated incrementally when a new value arrives.
   The first target is rolling mean and variance (Welford-based update).
@@ -107,14 +108,21 @@ for data analysis workflows.
 - The initial implementation will expose concrete floating-point types
   (for example, ``float`` and ``double`` bindings).
 
+- The binding layer leverages pybind11's buffer protocol support, allowing 
+  Python libraries like NumPy to view the underlying C++ memory without 
+  duplicating data.
+
 3. Data Flow and Scope
 ----------------------
 At each update step, a new sample is inserted into the ring buffer, expired 
 data is logically removed, and enabled statistics are updated incrementally.
 
-The first version focuses on correctness, numerical stability, and predictable
-runtime behavior in a single-thread setting. Thread-safe updates and more 
-advanced memory-sharing strategies are considered future extensions.
+- The first version focuses on correctness, numerical stability, and 
+  predictable runtime behavior in a single-thread setting.
+
+- This version also prioritizes efficient memory sharing between C++ and 
+  Python, ensuring that the rolling window data can be analyzed in Python with 
+  zero-copy overhead.
 
 API Description
 ===============
@@ -146,33 +154,38 @@ Batch input support is considered optional future work.
 Schedule
 ========
 
-Week 1 (03/16 to 03/22):
+Week 1 (03/23 to 03/29):
 
  Project setup (GitHub repo, Makefile, pybind11 minimal build).
 
-Week 2 (03/23 to 03/29):
+Week 2 (03/30 to 04/05):
 
- Implement ``RingBuffer<T>`` with fixed-size storage and wrap-around logic.
+ Implement ``RingBuffer<T>`` and its Python bindings with fixed-size storage 
+ and wrap-around logic.
 
-Week 3 (03/30 to 04/05):
+Week 3 (04/06 to 04/12):
 
- Implement rolling mean/variance (Welford-based update).
+ Implement rolling mean/variance (Welford-based update) and write initial 
+ pytest to verify it.
 
 Week 4 (04/20 to 04/26): (after midterm exam week)
 
- Add basic C++ tests and fix core edge cases.
+ Add C++ edge cases, zero-copy optimization research, and integration testing.
 
 Week 5 (04/27 to 05/03):
 
- Implement Python bindings for ``float``/``double`` versions.
+ Implement zero-copy memory sharing and optimize buffer access patterns for 
+ performance.
 
 Week 6 (05/04 to 05/10):
 
- Add pytest tests and compare selected outputs with NumPy.
+ Comprehensive testing (full pytest suite), benchmarking, and documentation 
+ review.
 
 Week 7 (05/11 to 05/17):
 
- Perform simple performance checks against a naive Python baseline.
+ Performance benchmarking against naive Python implementation and final 
+ optimization tuning.
 
 Week 8 (05/18 to 05/24):
 
