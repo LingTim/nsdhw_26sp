@@ -37,10 +37,17 @@ differences between pure Python implementations, the naive C++ baseline,
 and the AVX-optimized C++ versions.
 
 ## Schedule
-* **Week 6:** Implement matrix-scalar multiplication.
-* **Week 7:** Implement matrix-scalar division.
-* **Week 9:** Implement matrix-vector multiplication.
-* **Week 10:** Implement matrix-matrix addition and subtraction.
-* **Week 11:** Implement matrix-matrix multiplication and AVX optimizations.
-* **Week 12:** Benchmark, compare performance differences, and finalize the report.
+
+**Week 6:** Implement matrix-scalar multiplication.
+
+**Week 7:** Implement matrix-scalar division.
+
+**Week 9:** Implement matrix-vector multiplication.
+
+**Week 10:** Implement matrix-matrix addition and subtraction.
+
+**Week 11:** Implement matrix-matrix multiplication and AVX optimizations.
+
+**Week 12:** Benchmark, compare performance differences, and finalize the report.
+
 
