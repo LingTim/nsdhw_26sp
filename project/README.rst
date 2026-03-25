@@ -80,6 +80,10 @@ Follow the format to add your project:
    `FastMCPricer <ChaseWu1125/README.rst>`__:
    https://github.com/ChaseWu1125/FastMCPricer
 
+1. `LingTim <https://github.com/LingTim>`__ for
+   `Emulating NumPy Matrix Operations <LingTim/README.rst>`__:
+   https://github.com/LingTim/Reimplement-NumPy-Tensor-Operations
+
 .. note::
 
   Append your project after the first example entry.  Do not delete the example
