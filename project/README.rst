@@ -89,6 +89,11 @@ Project can be found here
    `ColTable <WongJeYi/ColTable/README.rst>`__:
    https://github.com/WongJeYi/ColTable
 
+1. `alu98753 <https://github.com/alu98753>`__ for
+   `FastReplay: A Zero-Copy Atomic-Based Ring Buffer for RL <alu98753/README.rst>`__:
+   https://github.com/alu98753/FastReplay
+
+
 .. note::
 
   Append your project after the first example entry.  Do not delete the example
