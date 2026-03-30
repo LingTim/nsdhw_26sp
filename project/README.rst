@@ -52,50 +52,40 @@ Follow the format to add your project:
 0. `github_account_name <https://github.com/github_account_name>`__ for
    `Project subject (this is an example entry) <github_account_name/README.rst>`__:
    https://github.com/github_account_name/project_name
-1. `qqsc12 <https://github.com/qqsc12>`__ for
-   `Semi-columnar-array for Semiconductor Data <qqsc12/README.rst>`__:
-   https://github.com/qqsc12/semi-columnar-array
-
-1. `itsmalcomx <https://github.com/itsmalcomx>`__ for
-   `FastODE <itsmalcomx/README.rst>`__:
-   https://github.com/itsmalcomx/FastODE
-
-1. `romanycc <https://github.com/romanycc>`__ for
-   `DotArena <romanycc/README.rst>`__:
-   https://github.com/romanycc/DotArena
-
-1. `jylin34 <https://github.com/jylin34>`__ for
-   `FastGA <jylin34/README.rst>`__:
-   https://github.com/jylin34/FastGA
-
-1. `annie95162 <https://github.com/annie95162>`__ for
-   `ProtoLib: Incremental Vector Store Library <annie95162/README.rst>`__:
-   https://github.com/annie95162/ProtoLib
-
-1. `Yuli-ytd <https://github.com/Yuli-ytd>`__ for
-   `StreamStats <Yuli-ytd/README.rst>`__:
-   https://github.com/Yuli-ytd/StreamStats
-
-1. `ChaseWu1125 <https://github.com/ChaseWu1125>`__ for
-   `FastMCPricer <ChaseWu1125/README.rst>`__:
-   https://github.com/ChaseWu1125/FastMCPricer
-
-1. `LingTim <https://github.com/LingTim>`__ for
-   `Emulating NumPy Matrix Operations <LingTim/README.rst>`__:
-   https://github.com/LingTim/Reimplement-NumPy-Tensor-Operations
-
-Project can be found here
-`WongJeYi <https://github.com/WongJeYi>`__ for
-   `ColTable <WongJeYi/ColTable/README.rst>`__:
-   https://github.com/WongJeYi/ColTable
-
-1. `alu98753 <https://github.com/alu98753>`__ for
-   `FastReplay: A Zero-Copy Atomic-Based Ring Buffer for RL <alu98753/README.rst>`__:
-   https://github.com/alu98753/FastReplay
-
 
 .. note::
 
   Append your project after the first example entry.  Do not delete the example
   entry.
+
+1. `ChaseWu1125 <https://github.com/ChaseWu1125>`__ for
+   `FastMCPricer <ChaseWu1125/README.rst>`__:
+   https://github.com/ChaseWu1125/FastMCPricer
+2. `LingTim <https://github.com/LingTim>`__ for
+   `Emulating NumPy Matrix Operations <LingTim/README.rst>`__:
+   https://github.com/LingTim/Reimplement-NumPy-Tensor-Operations
+3. `WongJeYi <https://github.com/WongJeYi>`__ for
+   `ColTable <WongJeYi/ColTable/README.rst>`__:
+   https://github.com/WongJeYi/ColTable
+4. `Yuli-ytd <https://github.com/Yuli-ytd>`__ for
+   `StreamStats <Yuli-ytd/README.rst>`__:
+   https://github.com/Yuli-ytd/StreamStats
+5. `alu98753 <https://github.com/alu98753>`__ for
+   `FastReplay: A Zero-Copy Atomic-Based Ring Buffer for RL <alu98753/README.rst>`__:
+   https://github.com/alu98753/FastReplay
+6. `annie95162 <https://github.com/annie95162>`__ for
+   `ProtoLib: Incremental Vector Store Library <annie95162/README.rst>`__:
+   https://github.com/annie95162/ProtoLib
+7. `itsmalcomx <https://github.com/itsmalcomx>`__ for
+   `FastODE <itsmalcomx/README.rst>`__:
+   https://github.com/itsmalcomx/FastODE
+8. `jylin34 <https://github.com/jylin34>`__ for
+   `FastGA <jylin34/README.rst>`__:
+   https://github.com/jylin34/FastGA
+9. `qqsc12 <https://github.com/qqsc12>`__ for
+   `Semi-columnar-array for Semiconductor Data <qqsc12/README.rst>`__:
+   https://github.com/qqsc12/semi-columnar-array
+10. `romanycc <https://github.com/romanycc>`__ for
+    `DotArena <romanycc/README.rst>`__:
+    https://github.com/romanycc/DotArena
 
