@@ -1,6 +1,10 @@
 CXX = g++
-CXXFLAGS = -O3 -Wall -shared -std=c++11 -fPIC
-PYBIND11_INCLUDES = $(shell python3 -m pybind11 --includes)
+
+PYTHON_INCLUDES = $(shell python3-config --includes)
+
+PYBIND11_INCLUDES = $(shell python3 -m pybind11 --includes 2>/dev/null || echo "")
+
+CXXFLAGS = -O3 -Wall -shared -std=c++11 -fPIC $(PYTHON_INCLUDES) $(PYBIND11_INCLUDES)
 PYTHON_SUFFIX = $(shell python3-config --extension-suffix)
 
 TARGET = _matrix$(PYTHON_SUFFIX)
@@ -13,7 +17,7 @@ MKL_LIBS = -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_lp64 -lmkl_se
 all: $(TARGET)
 
 $(TARGET): matrix.cpp
-	$(CXX) $(CXXFLAGS) $(PYBIND11_INCLUDES) $(MKL_FLAGS) matrix.cpp -o $(TARGET) $(MKL_LIBS)
+	$(CXX) $(CXXFLAGS) $(MKL_FLAGS) matrix.cpp -o $(TARGET) $(MKL_LIBS)
 
 test: $(TARGET)
 	python3 -m pytest test_matrix.py -v
